@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - hantera dynamiskt innehåll</title>
+​
+    <style>
+​
+    div {
+            background-color:cornsilk;
+            border: 1px dotted grey;
+            min-height: 1rem;
+            width: 100%
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form action="#">
+        <fieldset>
+            <p>
+                <label for="element">Ange ett element</label>
+                <br>
+                <input type="text" id="element" required>    
+            </p>
+            <p>
+                <label for="text">Text innehåll</label>
+                <br>
+                <input type="text" id="text" required>    
+            </p>
+            <input type="submit" value="Skapa element">
+    </fieldset>
+    </form>
+​
+    <div id="content"></div>
+​
+    <script src="dynamic.js"></script>
+</body>
+</html>
